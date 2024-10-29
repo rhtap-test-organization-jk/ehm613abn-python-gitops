@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ehm613abn-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ehm613abn-python 
+  name: ehm613abn-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ehm613abn-python 
